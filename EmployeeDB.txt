@@ -5,8 +5,8 @@ dept_name varchar
 
 Dept_Emp
 -
-dept_no int pk fk >- Departments.dept_no
-emp_no varchar fk >- Employees.emp_no
+dept_no varchar pk fk >- Departments.dept_no
+emp_no int fk >- Employees.emp_no
 from_date date
 to_date date
 
