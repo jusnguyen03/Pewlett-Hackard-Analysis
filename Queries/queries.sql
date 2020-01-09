@@ -51,4 +51,5 @@ CREATE TABLE dept_emp (
   to_date DATE NOT NULL,
   PRIMARY KEY (dept_no, emp_no)
 );
+
 SELECT * FROM departments;
