@@ -33,7 +33,13 @@ Included in the repository are all of the following that was submitted for this 
 
 ### Number of [titles] Retiring
 
-![]()
+Based off of the ERD, I found that inner joining the employees, titles, and salaries tables would be the best. I was able to create a new table doing two inner join - on statements to combine all 3 tables which included the following columns:
+  - Employee number
+  - First and last name
+  - Title
+  - from_date
+  - Salary
+The employees table had the employee numbers, first and last names. To bring in the title and from_date, I saw that the titles table had that information, including the emp_no, which allowed me to join the tables. To bring in the salary, I saw that in the salaries table had the emp_no to join that as well.
 
 ### Only the Most Recent Titles
 
