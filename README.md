@@ -29,7 +29,7 @@ Included in the repository are all of the following that was submitted for this 
   
 
 ### ERD
-![]()
+![](https://github.com/jusnguyen03/Pewlett-Hackard-Analysis/blob/master/EmployeeDB.png)
 
 ### Number of [titles] Retiring
 
