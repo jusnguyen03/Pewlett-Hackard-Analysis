@@ -41,13 +41,31 @@ Included in the repository are all of the following that was submitted for this 
 
 ### Who's Ready for a Mentor?
 
-There are 1549 people that could potentially be ready for a mentor. I was able to determine this by creating a new table that included
+There are 1549 employees that could potentially be ready for a mentor. I was able to determine this by creating a new table that included
   - Employee number
   - First and last name
   - Title
   - from_date and to_date
 
 Based off of the ERD, I found that joining the employees and titles tables would be the best. Then I used a WHERE statement to filter for only employees born in 1965 and then used an AND statement within the WHERE statement for to_date to be 1/1/9999, since this would be all still current employees. After I used a SELECT COUNT statement to count the number of emp_no in the new table we created to find how many people are ready for mentors.
-![]()
+
+#### Code
+-- Who's Ready for a Mentor?
+SELECT  e.emp_no,
+        e.first_name,
+        e.last_name,
+        titles.title,
+		titles.from_date,
+		titles.to_date
+		
+INTO mentor_info
+FROM employees AS e
+    INNER JOIN titles
+        ON (e.emp_no = titles.emp_no)
+WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+    AND (titles.to_date = '9999-01-01');
+	
+SELECT COUNT(emp_no)
+FROM mentor_info
 
 
