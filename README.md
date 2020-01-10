@@ -39,6 +39,7 @@ Based off of the ERD, I found that inner joining the employees, titles, and sala
   - Title
   - from_date
   - Salary
+  
 The employees table had the employee numbers, first and last names. To bring in the title and from_date, I saw that the titles table had that information, including the emp_no, which allowed me to join the tables. To bring in the salary, I saw that in the salaries table had the emp_no to join that as well.
 
 ### Only the Most Recent Titles
