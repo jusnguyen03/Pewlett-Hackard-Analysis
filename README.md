@@ -24,7 +24,7 @@ The goals for this challenge are:
 ## Challenge Summary
 Included in the repository are all of the following that was submitted for this challenge
   - challenge.sql
-  - 
+  - EmployeeDB.png
   - 
   
 
