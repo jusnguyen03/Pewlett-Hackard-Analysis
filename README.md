@@ -25,8 +25,9 @@ The goals for this challenge are:
 Included in the repository are all of the following that was submitted for this challenge
   - challenge.sql
   - EmployeeDB.png
+  - eligible_number_retiring.csv
   - 
-  
+  - 
 
 ### ERD
 ![](https://github.com/jusnguyen03/Pewlett-Hackard-Analysis/blob/master/EmployeeDB.png)
@@ -43,6 +44,8 @@ Based off of the ERD, I found that inner joining the employees, titles, and sala
 The employees table had the employee numbers, first and last names. To bring in the title and from_date, I saw that the titles table had that information, including the emp_no, which allowed me to join the tables. To bring in the salary, I saw that in the salaries table had the emp_no to join that as well.
 
 I also had to filter out for only employees that were eligible for retirement. Going back from our module exercises, for retirement eligible employees, I used a WHERE BETWEEN AND statements to get only employees with birthday between 01/01/1952 to 01/01/1955 and hire dates between 01/01/1985 to 12/31/1988.
+
+After creating the new table "eligible_number_retiring", I did a SELECT COUNT to find that there are 48,700 employees eligible for retirement. I then exported the table into a csv file.
 
 ### Only the Most Recent Titles
 
