@@ -23,11 +23,14 @@ The goals for this challenge are:
 
 ## Challenge Summary
 Included in the repository are all of the following that was submitted for this challenge
-  - challenge.sql
+  - challenge.sql (this includes all the coding for the challenge)
   - EmployeeDB.png
   - eligible_number_retiring.csv
-  - 
+  - retire)recenttitles.csv
+  - counted_titles.csv
+  - Employee Count Frequency.png
   - mentor_info.csv
+  - queries.sql (in queries folder)
 
 ### ERD
 ![](https://github.com/jusnguyen03/Pewlett-Hackard-Analysis/blob/master/EmployeeDB.png)
