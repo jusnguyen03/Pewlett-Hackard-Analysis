@@ -42,6 +42,8 @@ Based off of the ERD, I found that inner joining the employees, titles, and sala
   
 The employees table had the employee numbers, first and last names. To bring in the title and from_date, I saw that the titles table had that information, including the emp_no, which allowed me to join the tables. To bring in the salary, I saw that in the salaries table had the emp_no to join that as well.
 
+I also had to filter out for only employees that were eligible for retirement. Going back from our module exercises, for retirement eligible employees, I used a WHERE BETWEEN AND statements to get only employees with birthday between 01/01/1952 to 01/01/1955 and hire dates between 01/01/1985 to 12/31/1988.
+
 ### Only the Most Recent Titles
 
 ![]()
