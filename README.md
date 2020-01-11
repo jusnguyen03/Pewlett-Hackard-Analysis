@@ -27,7 +27,7 @@ Included in the repository are all of the following that was submitted for this 
   - EmployeeDB.png
   - eligible_number_retiring.csv
   - 
-  - 
+  - mentor_info.csv
 
 ### ERD
 ![](https://github.com/jusnguyen03/Pewlett-Hackard-Analysis/blob/master/EmployeeDB.png)
