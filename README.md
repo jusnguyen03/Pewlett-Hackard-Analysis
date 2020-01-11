@@ -49,7 +49,7 @@ After creating the new table "eligible_number_retiring", I did a SELECT COUNT to
 
 ### Only the Most Recent Titles
 
-![]()
+![](https://github.com/jusnguyen03/Pewlett-Hackard-Analysis/blob/master/Employee%20Count%20Frequency.png)
 
 ### Who's Ready for a Mentor?
 
