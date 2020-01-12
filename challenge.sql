@@ -18,21 +18,17 @@ AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 SELECT COUNT(emp_no)
 FROM eligible_number_retiring
 
--- Only the Most Recent Titles
-CREATE TABLE retire_recenttitles as (
-	WITH eligible_number_retiring AS
-(
-	SELECT emp_no, first_name, last_name, title, from_date, salary,
-		 ROW_NUMBER() OVER
-	(PARTITION BY (emp_no, first_name, last_name) ORDER BY from_date DESC) AS rnum
-		  FROM eligible_number_retiring
-		  )
-SELECT * FROM eligible_number_retiring WHERE rnum = 1);
 
-SELECT COUNT(title), title 
-INTO titles_counted
-FROM retire_recenttitles
-GROUP BY title
+-- Only the Most Recent Titles
+Create table most_recent_titles as (
+select title, COUNT(emp_no) as num_cnt FROM
+(SELECT emp_no, first_name, last_name, first_name, title, from_date, salary,
+    ROW_NUMBER() OVER
+(PARTITION BY (emp_no) ORDER BY from_date DESC) rn
+  FROM eligible_number_retiring
+ )
+ tmp WHERE rn = 1
+ GROUP BY title);
 
 
 -- Who's Ready for a Mentor?
